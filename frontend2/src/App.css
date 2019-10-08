@@ -1,0 +1,145 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+} */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+img {
+  width: 20%;
+}
+
+.text-right {
+  float: right;
+  margin-right: 12px;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #05ffb0;
+  height: 100px;
+}
+
+.mission-container {
+  padding: 64px;
+  text-align: center;
+}
+
+.div-show {
+  padding: 58px;
+  text-align: center;
+  background-color: #05ffb0;
+}
+
+.d-block-w-100 {
+  position: relative;
+  top: -75px;
+  height: 400px;
+  width: auto;
+  overflow: hidden;
+}
+
+.ctct-container {
+  position: relative;
+  padding: 60px;
+  height: 400px;
+}
+
+.ctct-col-tu {
+  position: absolute;
+  right: 40px;
+  top: 20px;
+  padding: 5px;
+}
+
+.ctct-lbl {
+  font-size: 28px;
+}
+.foot-div {
+  background-color: #05ffb0;
+  padding: 20px;
+  text-align: center;
+  height: 300px;
+}
+.ft {
+  color: white;
+}
+.div-logo {
+  padding: 10px;
+}
+.logo-tmp {
+  background-color: #05ffb0;
+}
+.div-entrp-contain {
+  text-align: center;
+  padding: 20px;
+  
+}
+.content-entrp-header {
+  text-align: center;
+}
+.div-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.div-reglog {
+  float: right;
+}
+.div-signup {
+  text-align: center;
+}
+.div-login {
+  text-align: center;
+}
+.div-fil {
+  text-align: center;
+}
+.div-news {
+  text-align: center;
+}
+
