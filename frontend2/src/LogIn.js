@@ -19,7 +19,7 @@ class LogIn extends React.Component {
    
     login = e => {
         e.preventDefault()
-        fetch("http://localhost:3000/api/v1/login", {
+        fetch("http://localhost:3000/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

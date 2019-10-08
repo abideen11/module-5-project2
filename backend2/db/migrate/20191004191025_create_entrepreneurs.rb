@@ -6,6 +6,7 @@ class CreateEntrepreneurs < ActiveRecord::Migration[6.0]
       t.string :continent
       t.string :reason 
       t.integer :amount 
+      t.string :img_url
 
       t.timestamps
     end

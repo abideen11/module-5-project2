@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 2019_10_04_191042) do
     t.string "continent"
     t.string "reason"
     t.integer "amount"
+    t.string "img_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -15,7 +15,7 @@ class FillForm extends React.Component {
         }
     }
     updateAmount = () => {
-        fetch("http://localhost:3000/api/v1/agreements", {
+        fetch("http://localhost:3000/agreements", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
