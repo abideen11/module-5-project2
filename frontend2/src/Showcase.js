@@ -1,12 +1,9 @@
 import React from 'react'
 import { Carousel } from 'react-bootstrap'
-import Logo from './logo.svg'
-
 
 export default class Showcase extends React.Component {
     render() { 
         console.log("the props are:", this.props.entrepreneur[0])
-        // debugger
         return(
             this.props.entrepreneur[0] ?
             <div className="div-show">
@@ -19,7 +16,6 @@ export default class Showcase extends React.Component {
                     src={this.props.entrepreneur[0].img_url}
                     alt="First slide"
                     />
-                    {/* <br/> */}
                     <Carousel.Caption>
                     <h3>{this.props.entrepreneur[0].name}</h3>
                     <p>{this.props.entrepreneur[0].reason}</p>
@@ -40,7 +36,6 @@ export default class Showcase extends React.Component {
                 <Carousel.Item>
                     <img
                     className="d-block-w-100"
-                    // src="holder.js/800x400?text=Third slide&bg=20232a"
                     src={this.props.entrepreneur[3].img_url}
                     alt="Third slide"
                     />

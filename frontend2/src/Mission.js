@@ -1,11 +1,9 @@
 import React from 'react'
-// import people from './public/people.png'
 import { FaHeart } from "react-icons/fa";
 
 export default function Mission () {
     return(
         <div className="mission-content">
-            {/* <img src={people} alt="people smiling"/> */}
             <div></div>
             <div className="mission-container">
                 <font color="red"><FaHeart /></font>

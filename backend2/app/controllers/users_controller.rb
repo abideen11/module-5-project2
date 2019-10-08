@@ -3,14 +3,12 @@ class UsersController < ApplicationController
 
     def create
         @user = User.new(user_params)
-        # byebug
         if @user.valid?
             @user.save
             render json: @user
         else 
             # flash[:error] = "Invalid username or password"
         end 
-        # byebug
     end
     private 
     def user_params

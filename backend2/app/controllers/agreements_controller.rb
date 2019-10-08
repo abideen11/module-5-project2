@@ -4,16 +4,12 @@ class AgreementsController < ApplicationController
         render json: @agreements, only: [:id, entrepreneur_id, :user_id, amount]
     end
     def create
-        # byebug
         @agreement = Agreement.new(agreement_params)
         @agreement.user_id = current_user.id
-        # byebug
         @agreement.save
         entrepreneur = Entrepreneur.find(agreement_params[:entrepreneur_id])
-        # byebug
         entrepreneur.amount = entrepreneur.amount - agreement_params[:amount]
         entrepreneur.save
-        # byebug
         render json: @agreement, only: [:id, :entrepreneur_id, :user_id, :amount]
     end
 

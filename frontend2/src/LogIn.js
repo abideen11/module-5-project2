@@ -8,14 +8,6 @@ class LogIn extends React.Component {
             [e.target.name]: e.target.value 
         })
     }
-    // checkCredentials = () => {
-    //     if (data.username == e.target[0].value && data.password == e.target[1].value) {
-    //         <Entrepreneur />
-    //     }
-    //     else {
-    //         console.log("Invalid username or password")
-    //     }
-    // }
    
     login = e => {
         e.preventDefault()
@@ -34,7 +26,6 @@ class LogIn extends React.Component {
             localStorage.token = data.token
             localStorage.id = data.id
             this.props.history.push('/')
-            // localStorage.setItem("use-token", data)
             console.log(data)
         })
     }

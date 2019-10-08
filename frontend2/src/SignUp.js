@@ -1,5 +1,4 @@
 import React from 'react'
-import FillForm from './FillForm'
 import { withRouter } from 'react-router-dom'
 
 class SignUp extends React.Component {
@@ -14,20 +13,12 @@ class SignUp extends React.Component {
             check: []
         }
     }
-    // handleSubmit = e => {
-    //     e.preventDefault()
-    // }
     handleChange = e => {
         this.setState({
             [e.target.name]: e.target.value
         })
     }
     login = (e) => {
-        // if(password and confirm password are equal){
-            // do stuff
-        // } else {
-            // don't do stuff, it would be nice to give the user a message that passwords don't match
-        // }
         console.log(this.state)
         e.preventDefault() 
         fetch("http://localhost:3000/users", {
@@ -46,12 +37,8 @@ class SignUp extends React.Component {
         .then(r => r.json())
         .then(newUser => {
             console.log(newUser)
-            // this.props.history.push('/login')
-            // this.props.handleSignUp(newUser)
-            // localStorage.setItem("use-token", newUser)
             this.handleDirect()
         })
-        // newUser => {() => this.handleChange(newUser)}
     }
     handleDirect = () => {
         this.setState({directTo: !this.state.directTo})
@@ -59,10 +46,9 @@ class SignUp extends React.Component {
     redirectToLogin = () => {
         this.props.history.push('/login')
     }
-    // onClick={this.handleDirect}
     render() {
         return(
-            this.state.directTo ? <div><p>Thank you for your for registering</p>
+            this.state.directTo ? <div className="after-reg"><p>Thank you for your for registering.</p>
             <button onClick={this.redirectToLogin}>Please log in before continuing.</button></div> :
             <div className="div-signup">
                 <h2>Sign Up</h2>

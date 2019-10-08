@@ -7,7 +7,6 @@ export default class EntrepreneursContainer extends React.Component {
             <div className="div-entrp">
                 <div className="content-entrp-header">
                     <h1>Our Esteemed Entrepreneurs</h1>
-                    {/* <Filter filterEntrep={this.props.filterEntrep}/> */}
                 </div>
                 <div className="content-entrp">
                 </div>

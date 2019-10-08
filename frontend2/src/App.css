@@ -130,10 +130,13 @@ img {
 .div-reglog {
   float: right;
 }
-.div-signup {
+.div-signup, .div-login, .div-fil, .div-news, .after-reg, .after-form, .div-error {
   text-align: center;
 }
-.div-login {
+.div-social {
+  border-radius: 50%;
+}
+/* .div-login {
   text-align: center;
 }
 .div-fil {
@@ -141,5 +144,5 @@ img {
 }
 .div-news {
   text-align: center;
-}
+} */
 
