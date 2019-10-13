@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 import Mission from './Mission'
 import Showcase from './Showcase'
 import Contact from './Contact'

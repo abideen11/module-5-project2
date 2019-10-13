@@ -7,6 +7,7 @@ import SignUp from './SignUp'
 import LogIn from './LogIn'
 import Footer from './Footer'
 import Home from './Home'
+import Error from './Error'
 import FillForm from './FillForm'
 import EntrepreneursContainer from './EntrepreneursContainer';
 import Donate from './Donate'
