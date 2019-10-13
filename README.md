@@ -7,6 +7,8 @@ The platform works by the user signing up to be a lender, after their credential
 Before proceeding: create a folder, inside the folder, create one folder for the backend and another for the frontend
 
 Setup
+
+
 Fork and clone into a folder that will have the backend and frontend folders
 
 cd into your backend folder
